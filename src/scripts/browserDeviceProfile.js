@@ -947,7 +947,7 @@ import browser from './browser';
         if (supportsTextTracks()) {
             profile.SubtitleProfiles.push({
                 Format: 'vtt',
-                Method: 'External'
+                Method: 'Hls'
             });
         }
         if (options.enableSsaRender !== false && (!options.isRetry && appSettings.get('subtitleburnin') !== 'allcomplexformats')) {
